@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import { Inter } from "next/font/google";
-import { cn } from "@/lib/utils";
-
-const inter = Inter({subsets:['latin'],variable:'--font-sans'});
+import "@/styles/globals.css";
+import { ThemeProvider } from "@/providers/ThemeProvider";
+import { Toaster } from "@/components/ui/sonner";
+import Header from "@/components/ui/Header";
 
 export const metadata: Metadata = {
   title: "skylark",
@@ -16,8 +15,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cn("font-sans", inter.variable)}>
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body><ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Header />
+            {children}
+
+            <Toaster />
+          </ThemeProvider></body>
     </html>
   );
 }
