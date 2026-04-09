@@ -1,6 +1,6 @@
 function page() {
   return (
-    <div>homepage</div>
+    <div></div>
   )
 }
 
