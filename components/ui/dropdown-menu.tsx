@@ -267,3 +267,14 @@ export {
   DropdownMenuSubTrigger,
   DropdownMenuSubContent,
 }
+
+
+
+
+//{ this is the dropdown menu component which is used in the header
+//  component and it is used to show the dropdown menu when the user 
+// clicks on the profile picture in the header component. 
+// It is also used to show the logout button in the dropdown menu.}
+
+
+// pnpm dlx shadcn@latest add dropdown-menu
