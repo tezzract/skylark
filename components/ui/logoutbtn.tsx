@@ -28,7 +28,7 @@ const handlelogout = async()=>{
     description: "something went wrong",
   })
 }
-setLoading(false)               //this is for that the 
+setLoading(false)               //this is for that the component that the loading animation dont play for infinity 
 console.log("logout")
 }
 return (

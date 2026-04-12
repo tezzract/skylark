@@ -7,7 +7,7 @@ import Logoutbtn from "./logoutbtn"
 
 
 function Header() {
-  const user =  1
+  const user =  null
   return (
     <header className="bg-popover relative flex h-24 w-full item-center justify-between px-3 sm:px-8 "
     
